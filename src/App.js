@@ -103,7 +103,6 @@ export default class App extends Component {
               <SettingsCard
                 ref={this.settingsRef}
                 categories={['setting']}
-                markersLayerName='Configs'
                 globe={globe} />
             </CardColumns>
           </div>
