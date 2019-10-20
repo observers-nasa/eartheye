@@ -13,6 +13,6 @@ import App from './App'
 
 ReactDOM.render(
 <div>
-    <Favicon url="/images/earth_eye.ico" />
+    <Favicon url="https://observers-nasa.github.io/eartheye/images/earth_eye.ico" />
     <App/>
 </div>, document.getElementById('root'))
