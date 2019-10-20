@@ -50,8 +50,6 @@ export default class App extends Component {
       {layer: 'blue-marble', options: {category: 'base', enabled: false}},
       {layer: 'blue-marble-landsat', options: {category: 'base', enabled: false}},
       {layer: 'blue-marble-lowres', options: {category: 'base', enabled: false}},
-      {layer: 'eox-sentinal2', options: {category: 'base', enabled: false}},
-      {layer: 'eox-sentinal2-labels', options: {category: 'base', enabled: true}},
       {layer: 'eox-openstreetmap', options: {category: 'overlay', enabled: false, opacity: 0.8}},
       {layer: 'usgs-topo', options: {category: 'overlay', enabled: false, opacity: 0.8}},
       {layer: 'usgs-imagery-topo', options: {category: 'overlay', enabled: false, opacity: 0.8}},
