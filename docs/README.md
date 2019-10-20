@@ -1,6 +1,6 @@
 # eartheye
 EarthEye WebApp
-![EarthEye Logo](https://i.imgur.com/4O4KFwr.png)
+![EarthEye Logo](https://i.imgur.com/MuaFfYT.png)
 
 ## Instructions
 
