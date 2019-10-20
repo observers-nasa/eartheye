@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/eartheye/precache-manifest.94b1210bf2a72d1e603add4516325a4f.js"
+  "/eartheye/precache-manifest.d4a8de09ba72a378bd9e985c3d173924.js"
 );
 
 self.addEventListener('message', (event) => {
