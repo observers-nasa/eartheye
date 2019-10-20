@@ -50,11 +50,9 @@ export default class App extends Component {
       {layer: 'blue-marble-landsat', options: {category: 'base', enabled: false}},
       {layer: 'bing-aerial', options: {category: 'base', enabled: false}},
       {layer: 'bing-aerial-labels', options: {category: 'base', enabled: false}},
-      {layer: 'eox-sentinal2', options: {category: 'base', enabled: false}},
-      {layer: 'eox-sentinal2-labels', options: {category: 'base', enabled: true}},
       {layer: 'eox-openstreetmap', options: {category: 'overlay', enabled: false, opacity: 0.8}},
       {layer: 'bing-roads', options: {category: 'overlay', enabled: false, opacity: 0.8}},
-      {layer: 'renderables', options: {category: 'data', enabled: true, displayName: 'Markers'}},
+      {layer: 'renderables', options: {category: 'data', enabled: true, displayName: 'Marcadores'}},
       {layer: 'compass', options: {category: 'setting', enabled: false}},
       {layer: 'coordinates', options: {category: 'setting', enabled: true}},
       {layer: 'view-controls', options: {category: 'setting', enabled: true}},
@@ -68,13 +66,13 @@ export default class App extends Component {
       <NavBarItem key='set' title='Configurações' icon='cog' collapse={this.settingsRef.current}/>
     ]
 
-    const navbarSearch = <SearchBox title='Buscar' globe={globe}/>
+    const navbarSearch = <SearchBox title='Buscar' globe={globe} mapQuestApiKey='RGjBGWTuNwyYrQTsCZJZvZVoFanFizt5'/>
 
     return (
       <div>
         <NavBar
             logo=''
-            title='EarthEye'
+            title='Earth Eye'
             href='https://github.com/observers-nasa/eartheye'
             items={navbarItems}
             search={navbarSearch} />
