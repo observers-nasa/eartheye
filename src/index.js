@@ -21,7 +21,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Switch>
             <Route path="/globe" exact={true} component={App} />
-            <Route path="/intro" component={Intro} />
+            <Route path="/" component={Intro} />
             <Route path="/about" component={About} />
         </Switch>
     </ BrowserRouter>
