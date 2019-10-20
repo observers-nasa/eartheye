@@ -1,14 +1,12 @@
-# eartheye
-EarthEye WebApp
 ![EarthEye Logo](https://i.imgur.com/MuaFfYT.png)
 
-## Instructions
+## Instructions to install
 
 ### `npm install`
  
 Installs the dependencies defined in `package.json`.
 
-
+## How to run locally
 ### `npm start`
 
 Runs the app in the development mode.<br>
