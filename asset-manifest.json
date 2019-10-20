@@ -1,6 +1,24 @@
 {
-  "main.css": "static/css/main.e5cf83ed.css",
-  "main.css.map": "static/css/main.e5cf83ed.css.map",
-  "main.js": "static/js/main.01eed25b.js",
-  "main.js.map": "static/js/main.01eed25b.js.map"
+  "files": {
+    "main.css": "/eartheye/static/css/main.1b4dbaf0.chunk.css",
+    "main.js": "/eartheye/static/js/main.8b133b8b.chunk.js",
+    "main.js.map": "/eartheye/static/js/main.8b133b8b.chunk.js.map",
+    "runtime-main.js": "/eartheye/static/js/runtime-main.c9d81938.js",
+    "runtime-main.js.map": "/eartheye/static/js/runtime-main.c9d81938.js.map",
+    "static/css/2.0624914a.chunk.css": "/eartheye/static/css/2.0624914a.chunk.css",
+    "static/js/2.20b734c7.chunk.js": "/eartheye/static/js/2.20b734c7.chunk.js",
+    "static/js/2.20b734c7.chunk.js.map": "/eartheye/static/js/2.20b734c7.chunk.js.map",
+    "index.html": "/eartheye/index.html",
+    "precache-manifest.324990010941805752fe1d2a37cade92.js": "/eartheye/precache-manifest.324990010941805752fe1d2a37cade92.js",
+    "service-worker.js": "/eartheye/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/eartheye/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.1b4dbaf0.chunk.css.map": "/eartheye/static/css/main.1b4dbaf0.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9d81938.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.20b734c7.chunk.js",
+    "static/css/main.1b4dbaf0.chunk.css",
+    "static/js/main.8b133b8b.chunk.js"
+  ]
 }
