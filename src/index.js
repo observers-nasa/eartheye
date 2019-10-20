@@ -19,8 +19,8 @@ ReactDOM.render(
       <Favicon url="/images/earth_eye.ico" />
       <BrowserRouter>
         <Switch>
-            <Route path="/globe" exact={true} component={App} />
-            <Route path="/" exact={true} component={Intro} />
+            <Route path="/" exact={true} component={App} />
+            <Route path="/intro" exact={true} component={Intro} />
             <Route path="/about" component={About} />
         </Switch>
     </ BrowserRouter>

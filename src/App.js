@@ -23,9 +23,10 @@ export default class App extends Component {
 
   constructor(props) {
     super(props)
+
     this.state = {
-      lat: 34.2,
-      lon: -119.2,
+      lat: 23.54,
+      lon: 46.74,
       alt: 10e6,
       globe: null
     }
@@ -46,18 +47,17 @@ export default class App extends Component {
     const globe = this.globeRef.current
 
     const layers = [
-      {layer: 'blue-marble', options: {category: 'base', enabled: true}},
+      {layer: 'blue-marble', options: {category: 'base', enabled: false}},
       {layer: 'blue-marble-landsat', options: {category: 'base', enabled: false}},
-      {layer: 'bing-aerial', options: {category: 'base', enabled: false}},
-      {layer: 'bing-aerial-labels', options: {category: 'base', enabled: false}},
+      {layer: 'eox-sentinal2', options: {category: 'base', enabled: false}},
+      {layer: 'eox-sentinal2-labels', options: {category: 'base', enabled: true}},
       {layer: 'eox-openstreetmap', options: {category: 'overlay', enabled: false, opacity: 0.8}},
-      {layer: 'bing-roads', options: {category: 'overlay', enabled: false, opacity: 0.8}},
       {layer: 'renderables', options: {category: 'data', enabled: true, displayName: 'Marcadores'}},
       {layer: 'compass', options: {category: 'setting', enabled: false}},
       {layer: 'coordinates', options: {category: 'setting', enabled: true}},
       {layer: 'view-controls', options: {category: 'setting', enabled: true}},
       {layer: 'stars', options: {category: 'setting', enabled: false}},
-      {layer: 'atmosphere-day-night', options: {category: 'setting', enabled: false}}
+      {layer: 'atmosphere-day-night', options: {category: 'setting', enabled: true}}
     ]
 
     const navbarItems = [
@@ -71,16 +71,19 @@ export default class App extends Component {
     return (
       <div>
         <NavBar
-            logo=''
-            title='Earth Eye'
-            href='https://github.com/observers-nasa/eartheye'
+            logo='/images/earth_eye_logo.png'
+            title=''
+            href='https://observers-nasa.github.io/eartheye'
             items={navbarItems}
             search={navbarSearch} />
         <Container fluid className='p-0'>
           <div className='globe'>
               <Globe
                 ref={this.globeRef}
-                layers={layers}/>
+                layers={layers}
+                latitude={-23.5411354}
+                longitude={-46.7361999}
+                altitude={3000}/>
           </div>
           <div className='overlayTools noninteractive'>
               <Tools

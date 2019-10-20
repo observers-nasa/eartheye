@@ -45,9 +45,9 @@ export default class App extends Component {
     return (
       <div>
         <NavBar
-            logo=''
-            title='Earth Eye'
-            href='https://github.com/observers-nasa/eartheye'
+            logo='/images/earth_eye_logo.png'
+            title=''
+            href='https://observers-nasa.github.io/eartheye/globe'
             items={navbarItems} />
         <Container fluid className='p-0'>
           <div className='overlayCards noninteractive'>
