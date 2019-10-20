@@ -8,13 +8,10 @@ import {
   CardColumns,
   Container } from 'reactstrap'
 import {
-  NavBar,
-  NavBarItem
+  NavBar
  } from 'worldwind-react-globe-bs4'
 
-import { Link } from 'react-router-dom'
-
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { NavLink} from 'reactstrap';
 
 import './App.css'
 

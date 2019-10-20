@@ -8,7 +8,6 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Favicon from 'react-favicon';
 import './index.css'
-import { Link } from 'react-router-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import App from './App'
@@ -17,11 +16,11 @@ import About from './About'
 
 ReactDOM.render(
     <div>
-      <Favicon url="http://oflisback.github.io/react-favicon/public/img/github.ico" />
+      <Favicon url="/images/earth_eye.ico" />
       <BrowserRouter>
         <Switch>
             <Route path="/globe" exact={true} component={App} />
-            <Route path="/" component={Intro} />
+            <Route path="/" exact={true} component={Intro} />
             <Route path="/about" component={About} />
         </Switch>
     </ BrowserRouter>
