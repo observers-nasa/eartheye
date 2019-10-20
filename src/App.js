@@ -68,9 +68,8 @@ export default class App extends Component {
       <NavBarItem key='lyr' title='Layers' icon='list' collapse={this.layersRef.current}/>,
       <NavBarItem key='mkr' title='Markers' icon='map-marker' collapse={this.markersRef.current}/>,
       <NavBarItem key='set' title='Settings' icon='cog' collapse={this.settingsRef.current}/>,
-      <NavBarItem key='set' title='HeatMap' icon='map'>
-          <NavLink href='/heatmap.html' active='true' title='HeatMap' icon='hot'/>
-      </NavBarItem>
+      <NavBarItem key='set' href='/heatmap.html' title='' icon='map'/>,
+      <NavLink title="Go to HeatMap view" href='https://observers-nasa.github.io/eartheye/heatmap.html'> Go to HeatMap</NavLink>
     ]
 
     const navbarSearch = <SearchBox title='Buscar' globe={globe} mapQuestApiKey='RGjBGWTuNwyYrQTsCZJZvZVoFanFizt5'/>
@@ -78,12 +77,13 @@ export default class App extends Component {
     return (
       <div>
         <NavBar
-            logo='/images/earth_eye_logo.png'
+          logo='https://observers-nasa.github.io/eartheye/images/earth_eye_logo.png'
             title=''
             href='https://observers-nasa.github.io/eartheye'
             items={navbarItems}
             search={navbarSearch} />
         <Container fluid className='p-0'>
+        
           <div className='globe'>
               <Globe
                 ref={this.globeRef}
