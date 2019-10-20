@@ -8,21 +8,11 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Favicon from 'react-favicon';
 import './index.css'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import App from './App'
-import Intro from './Intro'
-import About from './About'
 
 ReactDOM.render(
-    <div>
-      <Favicon url="/images/earth_eye.ico" />
-      <BrowserRouter>
-        <Switch>
-            <Route path="/" exact={true} component={App} />
-            <Route path="/intro" component={Intro} />
-            <Route path="/about" component={About} />
-        </Switch>
-    </ BrowserRouter>
-    </div>
-    , document.getElementById('root'))
+<div>
+    <Favicon url="/images/earth_eye.ico" />
+    <App/>
+</div>, document.getElementById('root'))

@@ -7,7 +7,7 @@ import React, { Component } from 'react'
 import Globe from 'worldwind-react-globe'
 import {
   CardColumns,
-  Container } from 'reactstrap'
+  Container, NavLink } from 'reactstrap'
 import {
   LayersCard,
   MarkersCard,
@@ -49,21 +49,28 @@ export default class App extends Component {
     const layers = [
       {layer: 'blue-marble', options: {category: 'base', enabled: false}},
       {layer: 'blue-marble-landsat', options: {category: 'base', enabled: false}},
+      {layer: 'blue-marble-lowres', options: {category: 'base', enabled: false}},
       {layer: 'eox-sentinal2', options: {category: 'base', enabled: false}},
       {layer: 'eox-sentinal2-labels', options: {category: 'base', enabled: true}},
       {layer: 'eox-openstreetmap', options: {category: 'overlay', enabled: false, opacity: 0.8}},
-      {layer: 'renderables', options: {category: 'data', enabled: true, displayName: 'Marcadores'}},
+      {layer: 'usgs-topo', options: {category: 'overlay', enabled: false, opacity: 0.8}},
+      {layer: 'usgs-imagery-topo', options: {category: 'overlay', enabled: false, opacity: 0.8}},
+      {layer: 'renderables', options: {category: 'data', enabled: true, displayName: 'Markers'}},
       {layer: 'compass', options: {category: 'setting', enabled: false}},
       {layer: 'coordinates', options: {category: 'setting', enabled: true}},
       {layer: 'view-controls', options: {category: 'setting', enabled: true}},
-      {layer: 'stars', options: {category: 'setting', enabled: false}},
-      {layer: 'atmosphere-day-night', options: {category: 'setting', enabled: true}}
+      {layer: 'stars', options: {category: 'setting', enabled: true}},
+      {layer: 'atmosphere-day-night', options: {category: 'setting', enabled: true}},
+      {layer: 'tessellation', options: {category: 'setting', enabled: false}}
     ]
 
     const navbarItems = [
-      <NavBarItem key='lyr' title='Camadas' icon='list' collapse={this.layersRef.current}/>,
-      <NavBarItem key='mkr' title='Marcadores' icon='map-marker' collapse={this.markersRef.current}/>,
-      <NavBarItem key='set' title='Configurações' icon='cog' collapse={this.settingsRef.current}/>
+      <NavBarItem key='lyr' title='Layers' icon='list' collapse={this.layersRef.current}/>,
+      <NavBarItem key='mkr' title='Markers' icon='map-marker' collapse={this.markersRef.current}/>,
+      <NavBarItem key='set' title='Settings' icon='cog' collapse={this.settingsRef.current}/>,
+      <NavBarItem key='set' title='HeatMap' icon='map'>
+          <NavLink href='/heatmap.html' active='true' title='HeatMap' icon='hot'/>
+      </NavBarItem>
     ]
 
     const navbarSearch = <SearchBox title='Buscar' globe={globe} mapQuestApiKey='RGjBGWTuNwyYrQTsCZJZvZVoFanFizt5'/>
@@ -89,7 +96,7 @@ export default class App extends Component {
               <Tools
                 globe={globe}
                 markers={this.markersRef.current}
-                markersLayerName='Marcadores'/>
+                markersLayerName='Markers'/>
           </div>
           <div className='overlayCards noninteractive'>
             <CardColumns>
@@ -100,7 +107,7 @@ export default class App extends Component {
               <MarkersCard
                 ref={this.markersRef}
                 globe={globe}
-                markersLayerName='Marcadores' />
+                markersLayerName='Markers' />
               <SettingsCard
                 ref={this.settingsRef}
                 categories={['setting']}
