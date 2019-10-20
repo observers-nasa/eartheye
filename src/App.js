@@ -88,7 +88,7 @@ export default class App extends Component {
               <Tools
                 globe={globe}
                 markers={this.markersRef.current}
-                markersLayerName='Markers'/>
+                markersLayerName='Camadas'/>
           </div>
           <div className='overlayCards noninteractive'>
             <CardColumns>
@@ -99,10 +99,11 @@ export default class App extends Component {
               <MarkersCard
                 ref={this.markersRef}
                 globe={globe}
-                markersLayerName='Markers' />
+                markersLayerName='Marcadores' />
               <SettingsCard
                 ref={this.settingsRef}
                 categories={['setting']}
+                markersLayerName='Configs'
                 globe={globe} />
             </CardColumns>
           </div>
