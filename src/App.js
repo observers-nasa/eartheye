@@ -68,7 +68,6 @@ export default class App extends Component {
       <NavBarItem key='lyr' title='Layers' icon='list' collapse={this.layersRef.current}/>,
       <NavBarItem key='mkr' title='Markers' icon='map-marker' collapse={this.markersRef.current}/>,
       <NavBarItem key='set' title='Settings' icon='cog' collapse={this.settingsRef.current}/>,
-      <NavBarItem key='set' href='/heatmap.html' title='' icon='map'/>,
       <NavLink title="Go to HeatMap view" href='https://observers-nasa.github.io/eartheye/heatmap.html'> Go to HeatMap</NavLink>
     ]
 
